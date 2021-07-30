@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+
+}
+
+body {
+  background: #ebe5e4;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+button, input, textarea {
+  font-family: sans-serif;
+  border: none;
+
+}
+
+button {
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ececec;
+  background: #2ebfa4;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04);
+  transition: all .3s ease-out;
+}
+
+button:hover, button:focus {
+  filter: brightness(.8);
+  color: #ffffff;
+}
+
+button:active {
+  filter: brightness(.9);
+
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 0 48px;
+}
+
+.form h1 {
+  color: #4f8256;
+  margin-bottom: 24px; 
+  font-weight: 800;
+  text-align: left;
+  border-bottom: 5px solid #4f8256;
+  padding-bottom: 10px;
+  width: min-content;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper-field {
+  margin-bottom: 16px;
+  position: relative;
+  width: 380px;  
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  background: #fff;
+  border: 1px solid #fff;
+
+
+}
+
+.wrapper-field label {
+  position: absolute;
+  font-family: sans-serif;
+  top: 50%;
+  left: 6px;
+  line-height: 0;
+  pointer-events: none;
+  transition: all .3s ease-out;
+  color: #bbb;
+}
+
+.wrapper-field input, .wrapper-field textarea {
+  background: none;
+  height: 50px;
+  width: 100%;
+  padding: 24px 6px 6px;
+  line-height: 24px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  transition: all .3s ease-out;
+}
+
+.wrapper-field textarea {
+  resize: none;
+  max-width: 100%;
+  height: 110px;
+  position: relative;
+}
+
+.wrapper-field input::placeholder, .wrapper-field textarea::placeholder {
+  color: transparent;
+}
+
+/* Label Focus */
+.wrapper-field input:focus + label,
+.wrapper-field textarea:focus + label,
+.wrapper-field input:not(:placeholder-shown) + label,
+.wrapper-field textarea:not(:placeholder-shown) + label {
+  font-size: 12px;
+  top: 8px;
+  color: #2ebfa4;
+  margin: 8px 0;
+}
+
+.wrapper-field:focus-within {
+  border: 1px solid #2ebfa4 !important;
+}
+
+.form button {
+  width: 97%;
+  height: 50px;
+}
+
+/*  List */
+
+#container-list {
+  background: transparent;
+  max-width: 644px;
+  max-height: 500px;
+
+  overflow-y: scroll;
+  border-radius: 10px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  scrollbar-width: none;
+}
+
+#container-list::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+#wrapper-list li {
+  display: flex;
+  width: 100%;
+  border-radius: 4px;
+  list-style: none;
+  align-items: center;
+  border: 1px solid #2ebfa4;
+  transition: all .3s ease-in-out;
+
+}
+
+#wrapper-list li + li {
+  margin-top: 2%;
+}
+
+.info-container {
+  width: 823px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background: #2ebfa4;
+  padding: 16px;
+  cursor: pointer;
+  border-radius: 4px 0 0;
+}
+
+.info-container span {
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+.info-container p {
+  font-size: 14px;
+  color: #727272;
+  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
+
+  font-weight: 400;
+  margin-top: 8px;
+  max-width: 380px;
+  max-height: 50px;
+  line-height: 18px;
+  pointer-events: none;
+
+}
+
+.action-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 53px;
+  height: 100%;
+}
+
+.action-container .delete {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+
+#wrapper-list .checked .info-container {
+  background: #CCE8CC;
+}
+
+#wrapper-list .checked {
+  border: 1px solid #CCE8CC;
+  opacity: .8;
+}
+
+#wrapper-list .checked span,
+#wrapper-list .checked p {
+  text-decoration: line-through;
+}

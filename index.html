@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@0,500;0,700;1,800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/components/ModalDelete.css">
+
+  <title>ToDo List</title>
+</head>
+<body>
+  <div class="container">
+    <div class="form">
+      <h1>ToDo</h1>
+      <form id="form" name="toDoForm">
+        <div class="wrapper-field">
+          <input
+            type="text"
+            placeholder=" "
+            id="nameToDo"
+            name="title"
+            maxlength="40"
+            autocomplete="off"
+            required
+          >
+          <label for="nameToDo">Nome da tarefa</label>
+          
+        </div>
+
+        <div class="wrapper-field">
+          <textarea
+            type="text"
+            placeholder=" "
+            id="descriptionToDo"
+            name="description"
+            maxlength="164"       
+          ></textarea>
+          <label for="descriptionToDo">Descrição</label>
+        </div>
+
+        <button type="submit">Adicionar</button>
+      </form>
+    </div>
+
+  
+    <div id="container-list">
+    </div>
+  </div>
+
+  <div class="modal-delete">
+    <div class="container-modal">
+      <div class="wrapper">
+        <h2>Exluir</h2>
+        <p>Deseja realmente exluir essa tarefa?</p>
+        <div class="actions">
+          <a>Cancelar</a>
+          <button type="submit" id="delete-list">Sim, excluir.</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./scripts/main.js"></script>
+</body>
+</html>
