@@ -4,8 +4,8 @@
 
 #container-list {
   background: transparent;
-  max-width: 644px;
-  max-height: 500px;
+  max-width: 64.4rem;
+  max-height: 50rem;
 
   overflow-y: scroll;
   border-radius: var(--border-radius);
@@ -26,7 +26,7 @@
   border-radius: var(--border-radius-secondary);
   list-style: none;
   align-items: center;
-  border: 1px solid var(--primary);
+  border: .1rem solid var(--primary);
   transition: all .3s ease-in-out;
 
 }

@@ -12,7 +12,7 @@
   <!-- Styles -->
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="stylesheet" href="./styles/components/ModalDelete.css">
-  <link rel="stylesheet" href="./styles/components/List.css">
+  <link rel="stylesheet" href="./styles/components/ListTodo.css">
 
   <title>ToDo List</title>
 </head>
@@ -20,7 +20,7 @@
   <div class="container">
     <div class="form">
       <h1>ToDo</h1>
-      <form id="form" name="toDoForm">
+      <form method="POST" id="form" name="toDoForm">
         <div class="wrapper-field">
           <input
             type="text"
@@ -67,6 +67,7 @@
       </div>
     </div>
   </div>
-  <script src="./scripts/main.js"></script>
+
+  <script type="module" src="./scripts/main.js"></script> 
 </body>
 </html>
