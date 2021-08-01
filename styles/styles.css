@@ -44,9 +44,10 @@ button {
   font-family: 'Poppins', sans-serif;
   cursor: pointer;
   border-radius: var(--border-radius-secondary);
-  font-weight: 600;
+  font-size: var(--size-text-medium);
+  font-weight: 700;
   color: #ececec;
-  background: #2ebfa4;
+  background: var(--primary);
   box-shadow: var(--box-shadow);
   transition: all .3s ease-out;
 }
@@ -149,6 +150,4 @@ button:active {
 .form button {
   width: 97%;
   height: 5rem;
-  font-size: var(--size-text-medium);
-  font-weight: 700;
 }
