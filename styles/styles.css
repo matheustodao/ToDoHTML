@@ -149,4 +149,6 @@ button:active {
 .form button {
   width: 97%;
   height: 5rem;
+  font-size: var(--size-text-medium);
+  font-weight: 700;
 }
