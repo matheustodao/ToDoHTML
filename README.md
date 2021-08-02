@@ -1,7 +1,7 @@
 # Todo list
 
 Uma `TODO LIST` criada sem utilizar uma framework ou library usando somente com `HTML, CSS, JS puro`.
-Para salvar os dados foi utilizado a `IndexedDB API` baixo nível de armazenamento no `client-side`
+Para salvar os dados foi utilizado a `IndexedDB API` é uma API de baixo nível para armazenamento do `client-side` de quantidades significativas de dados estruturados.
 
 ## IndexedDB API
 
