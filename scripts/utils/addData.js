@@ -1,5 +1,5 @@
 import { db, databaseIndexed } from '../database/configIndexedDB.js';
-import { openTransaction } from '../database/openTransaction.js';
+import { openObjectStore } from '../database/openObjectStore.js';
 import { createList } from './createList.js';
 
 const form = document.getElementById('form');
@@ -13,11 +13,11 @@ export function addData() {
   }
   
   const { todo } = databaseIndexed['store'];
-  const todoStore = openTransaction({ database: db, store: todo, mode: 'readwrite' });
+  const todoStore = openObjectStore({ database: db, store: todo, mode: 'readwrite' });
   const request = todoStore.add(newItem);
 
   request.onsuccess = () => {
-    const todoStore = openTransaction({ database: db, store: todo });
+    const todoStore = openObjectStore({ database: db, store: todo });
     const request = todoStore.getAllKeys()
     
     request.onsuccess = (event) => {

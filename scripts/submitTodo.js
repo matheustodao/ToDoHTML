@@ -1,5 +1,5 @@
 import { resetFields } from './helpers/resetFields.js';
-import { addData } from './components/addData.js';
+import { addData } from './utils/addData.js';
 
 export function handleSubmit(event) {
   const form = document.getElementById('form');

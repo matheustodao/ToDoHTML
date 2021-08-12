@@ -1,4 +1,4 @@
-import { displayDataExists } from '../components/displayDataExists.js';
+import { displayDataExists } from '../utils/displayDataExists.js';
 
 export let db;
 export const databaseIndexed = {

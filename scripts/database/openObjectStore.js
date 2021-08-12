@@ -1,4 +1,4 @@
-export function openTransaction({
+export function openObjectStore({
   database,
   mode = 'readonly',
   store,

@@ -1,5 +1,5 @@
 import { db, databaseIndexed } from '../database/configIndexedDB.js';
-import { openTransaction } from '../database/openTransaction.js';
+import { openObjectStore } from '../database/openObjectStore.js';
 
 export function handleCheckList(event) {
   const list = event['target']['parentElement'];
@@ -11,7 +11,7 @@ export function handleCheckList(event) {
   list.classList.toggle('checked');
   
   const { todo } = databaseIndexed['store'];
-  const todoStore = openTransaction({ database: db, store: todo, mode: 'readwrite' });
+  const todoStore = openObjectStore({ database: db, store: todo, mode: 'readwrite' });
   const request = todoStore.get(Number(key));
   
   request.onsuccess = (event) => {

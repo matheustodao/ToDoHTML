@@ -1,10 +1,10 @@
 import { db, databaseIndexed } from '../database/configIndexedDB.js';
-import { openTransaction } from '../database/openTransaction.js';
+import { openObjectStore } from '../database/openObjectStore.js';
 import { createList } from './createList.js';
 
 export function displayDataExists() {
   const { todo } = databaseIndexed['store'];
-  const todoStore = openTransaction({ database: db, store: todo });
+  const todoStore = openObjectStore({ database: db, store: todo });
   const request = todoStore.openCursor();
 
   request.onsuccess = (event) => {
