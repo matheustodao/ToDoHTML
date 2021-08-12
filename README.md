@@ -13,6 +13,7 @@ IndexedDB permite armazenar e recuperar objetos que são indexados com uma `chav
 https://user-images.githubusercontent.com/52856911/129120636-8bddf8d7-e490-4761-8586-22f44f827968.mp4
 
 <em>
-  Para poder testar: utiliza a extensão Live-Server,no caso de usar o VScode.
+  Para poder testar: utiliza a extensão Live-Server, no caso de usar o VScode.
   <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Clica aqui!</a>
 </em>
+<em>Ou qualquer extensão que faça auto-reload.</em>
