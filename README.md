@@ -14,5 +14,5 @@ https://user-images.githubusercontent.com/52856911/129120636-8bddf8d7-e490-4761-
 
 <em>
   Para poder testar: utiliza a extensão Live-Server,no caso de usar o VScode.
-  <a href=" https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Clica aqui!</a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Clica aqui!</a>
 </em>
