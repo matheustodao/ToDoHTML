@@ -2,7 +2,7 @@
 
 Uma `TODO LIST` usando somente com `HTML, CSS, JS puro`.
 
-Para salvar os dados foi utilizado a `IndexedDB API` é uma API de baixo nível para armazenamento do `client-side` de quantidades significativas de dados estruturados.
+Para salvar os dados foi utilizado a `IndexedDB API` é uma API de baixo nível para armazenamento do `client-side`.
 
 ## IndexedDB API
 
