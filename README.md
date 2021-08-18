@@ -18,3 +18,4 @@ https://user-images.githubusercontent.com/52856911/129120636-8bddf8d7-e490-4761-
 </em>
 <br />
 <em>Ou qualquer extensão que faça auto-reload.</em>
+![GitHub](http://github.com)
